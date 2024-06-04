@@ -1,0 +1,1 @@
+http é a ponte entre os dados e o seu cliente, criar um servidor local é mais simples do que parece, servidores sempre vao ter portas para serem atreladas
