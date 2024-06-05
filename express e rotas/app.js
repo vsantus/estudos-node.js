@@ -5,9 +5,7 @@ let porta = 3000
 
 // como criar rotas?
 
-app.get("/", function (req, res) {
-    res.send('Olá Mundo!')// rota criada para inserir dados na propria pagina
-})
+// rota criada para inserir dados na propria pagina
 
 
 app.get("/sobre", function (req, res) {
@@ -24,6 +22,13 @@ app.get("/sobre/:nome/:sobrenome/:idade", function (req, res) { //esse so ira fu
     var teste = req.params
     console.table(teste)
 })
+
+//EXIBINDO HTML
+
+app.get("/", function(req,res){
+    res.sendFile(__dirname + '/html/index.html');
+}) 
+// nao funciona, arrumar
 
 
 
