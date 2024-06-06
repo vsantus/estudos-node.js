@@ -18,7 +18,6 @@ app.get("/sobre", function (req, res) {
 //CRIAÇÃO DE PARAMETROS, ao colocar 2 pontos em um item apos o seu endereço, ele vira um parametro:
 app.get("/sobre/:nome/:sobrenome/:idade", function (req, res) { //esse so ira funcionar se for passado algo apos o teste/, é possivel passar parametros HTML mais para frente
     res.send("<h1> Seja bem vindo </h1>" + req.params.nome + req.params.sobrenome + "<br>" + "<h2> Sua idade é </h2>" + req.params.idade); //atraves do req é possivel obter dados da requisao, afinal esse é o significado dela, como se fosse uma tabela JSON
-     
     var teste = req.params
     console.table(teste)
 })
@@ -28,7 +27,7 @@ app.get("/sobre/:nome/:sobrenome/:idade", function (req, res) { //esse so ira fu
 app.get("/", function(req,res){
     res.sendFile(__dirname + '/html/index.html');
 }) 
-// nao funciona, arrumar
+
 
 
 
