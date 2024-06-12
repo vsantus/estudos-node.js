@@ -9,7 +9,7 @@
 // // sequelize.authenticate().then(function(){ // .autenticate, função que me mostra se eu me conectei com o BD
 // //     console.log("Conectado com Sucesso!!!");
 // // }).catch(function(erro){
-// //     console.log("Falha na conecção...")
+// //     console.log("Falha na conexão...")
 // // }) 
 
 
