@@ -14,16 +14,13 @@ const sequelize = new Sequelize('teste', 'root', 'password', {
 })
 
 //rotas
-app.get("/cad", function(req,res){
+app.get("/", function(req,res){
     res.render('formulario'); // importando arquivo da pasta view e exibindo
-}) 
-
-app.post("/dados", function(req,res){
-    res.send('teste')
 })
 
-
-
+app.post("/cadastro", function(req,res){
+    res.send('teste')
+})
 
 app.listen(8081, function () {
     console.log(`Servidor ON, rodando em http://localhost:8081/`);
